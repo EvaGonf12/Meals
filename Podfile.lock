@@ -1,0 +1,35 @@
+PODS:
+  - Kingfisher (6.3.1)
+  - NavigationStack (1.0.4)
+  - Sourcery (1.6.1):
+    - Sourcery/CLI-Only (= 1.6.1)
+  - Sourcery/CLI-Only (1.6.1)
+
+DEPENDENCIES:
+  - Kingfisher (from `https://github.com/onevcat/Kingfisher.git`, branch `version6-xcode13`)
+  - NavigationStack
+  - Sourcery
+
+SPEC REPOS:
+  trunk:
+    - NavigationStack
+    - Sourcery
+
+EXTERNAL SOURCES:
+  Kingfisher:
+    :branch: version6-xcode13
+    :git: https://github.com/onevcat/Kingfisher.git
+
+CHECKOUT OPTIONS:
+  Kingfisher:
+    :commit: 5ecd8df18f1750efaa57d1b9623090156da01ef3
+    :git: https://github.com/onevcat/Kingfisher.git
+
+SPEC CHECKSUMS:
+  Kingfisher: 8b783c3d7be73a99b2172a743a5bc0a4dd331d79
+  NavigationStack: c2fb4c71b89659481e8e0dfb20e533681dce084f
+  Sourcery: f3759f803bd0739f74fc92a4341eed0473ce61ac
+
+PODFILE CHECKSUM: 4ddc9b9881161e6306f6a06d4fbd4c1a49cec1aa
+
+COCOAPODS: 1.11.2

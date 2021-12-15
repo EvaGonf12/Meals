@@ -1,0 +1,11 @@
+
+// MARK: - Errors
+
+"error_networking" = "Error service";
+"error_networking_decode" = "Error decoding server response";
+"error_networking_errorCode" = "Error service with code: %u";
+"error_networking_unknown" = "Unknown error";
+
+// MARK: - MEALS LIST
+
+"meals_list_title" = "Meals";
