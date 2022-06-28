@@ -34,12 +34,7 @@ extension View {
     func navbarType(title: String, display: NavigationBarItem.TitleDisplayMode) -> some View {
 
         Group {
-            if #available(iOS 14.0, *) {
-               self.navigationBarTitle(title, displayMode: display)
-            
-            } else {
-                self.navigationBarTitle(Text(title), displayMode: display)
-            }
+            self.navigationBarTitle(title, displayMode: display)
         }
     }
   

@@ -10,6 +10,8 @@ import NavigationStack
 
 struct MealsListView: View {
     
+    static let id = String(describing: Self.self)
+    
     @ObservedObject var viewModel: MealsListViewModel
     
     init(viewModel: MealsListViewModel) {
@@ -19,23 +21,19 @@ struct MealsListView: View {
     
     var body: some View {
         
-        NavigationStackView(transitionType: .custom(.opacity),
+        NavigationStackView(transitionType: .default,
                             navigationStack: viewModel.navigationStack) {
             
             switch viewModel.state {
             case .loading:
                 Spinner()
-                    .navbarType(title: "Meals 🍱", display: .inline)
             case .failed(let error):
                 ErrorView(error: error, handler: viewModel.fetchMealsList)
-                    .navbarType(title: "Meals 🍱", display: .inline)
             case .success:
                 if viewModel.mealsList.isEmpty {
                     emptyView
-                        .navbarType(title: "Meals 🍱", display: .inline)
                 } else {
                     mealsList
-                        .navbarType(title: "Meals 🍱", display: .inline)
                 }
             }
         }

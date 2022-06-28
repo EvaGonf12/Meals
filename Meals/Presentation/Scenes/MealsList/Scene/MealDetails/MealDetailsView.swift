@@ -48,7 +48,6 @@ struct MealDetailsView: View {
             }
             .edgesIgnoringSafeArea(.bottom)
             .navigationAppearance(backgroundColor: .white, foregroundColor: CustomUIColor.Primary.blueDark)
-            .navbarType(title: viewModel.meal.name, display: .inline)
             .navigationBarItems(leading: Button {
                 viewModel.back()
             } label: {
@@ -56,6 +55,7 @@ struct MealDetailsView: View {
                     .font(Fonts.h4)
                     .foregroundColor(CustomColor.Primary.blueDark)
             })
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
